@@ -59,7 +59,17 @@ main:
 program:
 times 510-($-$$) db 0
 dw 0xaa55				; magic number for bios
- 
 ```
+
 We can start with a simple program. We can write a simple program that prints one character to
 the screen. 
+
+```
+mov ah, 0x0e  ; set function to print character
+mov al, 'Z' ; set character to print
+int 0x10   ; print to screen
+hlt  ; halt
+```
+
+This program can then be assembled into machine code, either using an assembler, or by assembling
+by hand. For example, the first instruction `mov ah, 0e` corresponds to
