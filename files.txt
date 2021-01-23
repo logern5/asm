@@ -1,0 +1,17 @@
+monitor.asm: Assembly for initial monitor program
+monitor.bin: Assembled monitor program
+monitor.img: Bootable floppy image of monitor program
+mon2.asm: More advanced monitor program, prints out characters that are typed
+mon2.bin: Assembled mon2.asm
+z.asm: Program to print out 'Z'
+z.bin: Assembled z.asm
+hello.asm: 'Hello World' program
+hello.bin: Assembled hello.asm
+boot.asm: Simple bootloader program
+boot.bin: Assembled boot.asm
+blank.img: A blank 1.44MB floppy image
+user.img: A floppy image used for testing
+writer.asm: A program to write data to disk
+writer.bin: Assembled writer.asm
+reader.asm: A program to read the data written from disk and to run it
+reader.bin: Assembled reader.asm
